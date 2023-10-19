@@ -1,0 +1,98 @@
+/* .SideBarMainBox {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(136, 165, 191, 0.48) 2px 0px 3px 0px, rgba(255, 255, 255, 0.8) 0px 0px 0px 0px;
+}
+
+.SideBarTopBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.SideBarMiddleBox {
+    width: 100%;
+    padding: 0.5rem 0;
+    flex: 1;
+    overflow: scroll;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.SideBarMiddleBox::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+
+.SideBarBottomBox {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SideBarBottomLeftBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.SideBarBottomLeftBox > img {
+  width: 40px;
+}
+
+.SideBarBottomRightBox {
+  padding: 0.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.SideBarBottomRightNameBox {
+  width: 100%;
+}
+
+.SideBarBottomRightNameBox > span {
+  font-family: 'Poppins';
+  text-align: left;
+}
+
+.SideBarBottomRightLogOut {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SideBarBottomRightLogOut > button {
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  border-radius: 3px;
+} */

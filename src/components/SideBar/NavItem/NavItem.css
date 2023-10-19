@@ -1,0 +1,86 @@
+/* .navItem {
+    width: 90%;
+    margin: 0.25rem 0;
+    text-decoration: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    color: black;
+  }
+  
+  .activeNavItem {
+    color: white;
+    border-radius: 5px;
+    background-color: #0083ff;
+  }
+
+  .activeNavItem > .navIcon {
+    color: white;
+    border-radius: 5px;
+    background-color: #0083ff;
+  }
+
+  .activeNavItem > .navLabel {
+    color: white;
+    border-radius: 5px;
+    background-color: #0083ff;
+  }
+  
+  .navIcon {
+    padding: 0.75rem 0.5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navLabel {
+    flex: 1;
+    color: black;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+  }
+
+  .expandClass {
+    padding: 0.75rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navItemHeaderButton {
+    width: 90%;
+    margin: 0.25rem 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navItemHeaderChevron {
+    color: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s;
+  }
+  
+  .chevronExpanded {
+    transform: rotate(45deg);
+  }
+  
+  .navChildrenBlock {
+    width: 90%;
+    margin: 0.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navChildrenBlock > .navItem {
+    width: 100%;
+  } */
