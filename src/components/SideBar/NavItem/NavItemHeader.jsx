@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import './NavItem.css';
-// import {AddIcon, Icon} from '@chakra-ui/icons';
+import { MdExpandLess, MdExpandMore } from 'react-icons/md';
 
 const resolveLinkPath = (childTo, parentTo) => `${parentTo}/${childTo}`;
 
@@ -18,25 +17,26 @@ function NavItemHeader(props){
     e.preventDefault();
     setExpand(expanded => !expanded);
   };
-	
+
   return (
     <>
       <button
-        className={`navItem navItemHeaderButton`}
+        className={`w-full my-1 no-underline flex items-stretch justify-center text-black outline-none border-none cursor-pointer`}
         onClick={onExpandChange}
       >
-        <div className='navIcon'>
-          {/* <Icon as={icon}  /> */}
+        <div className='px-2 py-2 flex items-center justify-center'>
+          {icon}
         </div>
-        <span className='navLabel'>{label}</span>
-        <div className='expandClass'>
-          {/* <Icon as={AddIcon} className={expanded ? `navItemHeaderChevron chevronExpanded` :  `navItemHeaderChevron`} /> */}
+        <span className='flex-1 text-lg tracking-wide font-semibold text-left flex items-center justify-start ff-monster'>{label}</span>
+        <div className='p-2 flex items-center justify-center'>
+          { expanded ? <MdExpandMore /> : <MdExpandLess /> }
         </div>
        
       </button>
 
+
       {expanded && (
-        <div className='navChildrenBlock'>
+        <div className='w-full my-1 flex flex-col items-center justify-center'>
           {children.map((item, index) => {
             const key = `${item.label}-${index}`;
 
@@ -59,13 +59,15 @@ function NavItemHeader(props){
               <NavLink
                 key={key}
                 to={resolveLinkPath(item.to, props.item.to)}
-                className='navItem'
-                activeClassName='activeNavItem'
+                className='w-full my-1 no-underline flex items-stretch justify-center text-black'
+                activeClassName='text-white bg-rose-500'
               >
-                    <div className='navIcon'>
-                    {/* <Icon as={icon}  /> */}
+                    <div className='px-2 py-2 flex items-center justify-center'>
+                      {icon}
                   </div>
-                <span className='navLabel'>{label}</span>
+                  <span className='flex-1 text-lg tracking-wide font-semibold text-left flex items-center justify-start ff-monster'>
+                    {label}
+                  </span>
               </NavLink>
             );
           })}

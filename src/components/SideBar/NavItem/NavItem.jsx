@@ -1,7 +1,5 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import './NavItem.css';
-// import { Icon } from '@chakra-ui/react';
 import NavItemHeader from './NavItemHeader';
 
 function NavItem(props){
@@ -16,13 +14,16 @@ function NavItem(props){
     <NavLink
       exact
       to={location?.pathname.includes(to) ? location.pathname : to}
-      className='navItem'
-      activeClassName={location?.pathname.includes(to) ? 'activeNavItem' : ''}
+      className='py-2 w-full my-1 no-underline flex items-stretch justify-center text-black 
+      hover:bg-emerald-700 hover:text-white rounded-r-3xl'
+      activeClassName={location?.pathname.includes(to) ? 'text-white bg-rose-500' : ''}
     >
-      <div  className='navIcon'>
-        {/* <Icon as={icon}/> */}
+      <div  className='px-2 py-2 flex items-center justify-center text-md'>
+        {icon}
       </div>
-      <span className='navLabel'>{label}</span>
+      <span className='flex-1 text-lg tracking-wide font-semibold text-left flex items-center justify-start ff-monster'>
+        {label}
+      </span>
     </NavLink>
   );
 };
