@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --mac-color : rgb(229, 230, 232);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -27,6 +31,22 @@
     box-shadow: rgba(136, 165, 191, 0.48) 2px 0px 3px 0px, rgba(255, 255, 255, 0.8) 0px 0px 0px 0px;
 }
 
+.common-insider-bs {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 .border-radius-50 {
     border-radius: 50%;
+}
+
+.bg-mac {
+    background-color: var(--mac-color);
+}
+
+.fadeInUp{
+    animation : fadeInUpAnimation 1s ease backwards;
+}
+@keyframes fadeInUpAnimation{
+  0%{transform:translate(0px, 50px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
 }

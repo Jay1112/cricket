@@ -1,4 +1,4 @@
-import { sideMenuList } from './sideMenuList';
+import { sideMenuList } from '../../database/sideMenuList';
 import NavItem from './NavItem/NavItem';
 import React from 'react';
 import Logo from '../../assets/cricker_logo.png'

@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar(){
     return (
-        <div className="w-full sticky top-0 flex md:hidden">
+        <div className="w-full sticky top-0 md:flex hidden">
         NavBar
         </div>
     );
