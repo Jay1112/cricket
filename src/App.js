@@ -9,6 +9,7 @@ import SideBar from './components/SideBar/SideBar';
 import HomePage from './Pages/HomePage/HomePage';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import TeamsPage from './Pages/TeamsPage/TeamsPage';
+import PlayersPage from './Pages/PlayersPage/PlayersPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/teams' component={TeamsPage}/>
+                <Route exact path='/players' component={PlayersPage}/>
                 <Route path='*' component={PageNotFound} />
               </Switch>
           </div>

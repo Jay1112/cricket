@@ -9,10 +9,11 @@ module.exports = {
         '250' : '250px'
       },
       minWidth: {
+        '200': '200px',
         '250': '250px',
       },
-      flex : {
-        '20' : 0.2
+      maxWidth: {
+        '250': '250px',
       }
     },
     screens: {

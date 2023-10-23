@@ -35,6 +35,10 @@
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
+.common-gradient {
+    background: linear-gradient(90deg,#0674d6,#06579f);
+}
+
 .border-radius-50 {
     border-radius: 50%;
 }
