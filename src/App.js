@@ -22,8 +22,8 @@ function App() {
           <div className=''>
             <SideBar />
           </div>
-          <div className='px-2 flex-1 overflow-scroll'>
-            <div className='w-full overflow-scroll flex-1'>
+          <div className='px-2 overflow-scroll flex-1 flex flex-col items-center justify-center'>
+            <div className='w-full overflow-scroll flex-1 flex flex-col items-center justify-center'>
                 <Switch>
                   <Route exact path='/' component={HomePage} />
                   <Route exact path='/teams' component={TeamsPage}/>
