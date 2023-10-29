@@ -14,19 +14,23 @@ import PlayersPage from './Pages/PlayersPage/PlayersPage';
 function App() {
   return (
     <BrowserRouter>
-      <div className='w-screen h-screen flex items-stretch justify-center'>
-        <div className='md:hidden flex'>
-          <SideBar />
-        </div>
-        <div className='common-insider-bs flex-1 flex flex-col items-center justify-center overflow-scroll relative'>
-          <NavBar />
-          <div className='w-full overflow-scroll flex-1'>
-              <Switch>
-                <Route exact path='/' component={HomePage} />
-                <Route exact path='/teams' component={TeamsPage}/>
-                <Route exact path='/players' component={PlayersPage}/>
-                <Route path='*' component={PageNotFound} />
-              </Switch>
+      <div className='bg-app relative w-screen h-screen flex flex-col items-stretch justify-start overflow-scroll'>
+        {/* Top */}
+        <NavBar />
+        {/* Bottom */}
+        <div className='flex-1 overflow-scroll flex items-stretch justify-center'>
+          <div className=''>
+            <SideBar />
+          </div>
+          <div className='px-2 flex-1 overflow-scroll'>
+            <div className='w-full overflow-scroll flex-1'>
+                <Switch>
+                  <Route exact path='/' component={HomePage} />
+                  <Route exact path='/teams' component={TeamsPage}/>
+                  <Route exact path='/players' component={PlayersPage}/>
+                  <Route path='*' component={PageNotFound} />
+                </Switch>
+            </div>
           </div>
         </div>
       </div>

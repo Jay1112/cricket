@@ -2,8 +2,8 @@ import React from "react";
 
 function NavBar(){
     return (
-        <div className="w-full sticky top-0 md:flex hidden">
-        NavBar
+        <div className="px-2 py-4 custom-border-bottom">
+            <p className="text-3xl text-white font-normal ff-poppins tracking-wide">Cricker</p>
         </div>
     );
 }

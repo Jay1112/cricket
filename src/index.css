@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --mac-color : rgb(229, 230, 232);
+    --bg-app : #262626;
+    --bg-active-app : #404040;
 }
 
 * {
@@ -11,8 +12,20 @@
     margin: 0;
 }
 
+.bg-app {
+    background-color: var(--bg-app);
+}
+
+.bg-active-app {
+    background-color: var(--bg-active-app);
+}
+
 .bd {
     border: 1px solid red;
+}
+
+.custom-border-bottom {
+    border-bottom: 1px solid gray;
 }
 
 .ff-monster {

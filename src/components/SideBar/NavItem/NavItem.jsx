@@ -14,17 +14,15 @@ function NavItem(props){
     <NavLink
       exact
       to={location?.pathname.includes(to) ? location.pathname : to}
-      className='py-2 w-full no-underline flex items-stretch justify-center text-black 
-      hover:bg-purple-700 hover:text-white'
-      activeClassName={location?.pathname.includes(to) ? 'text-white bg-rose-600 hover:bg-rose-600' : ''}
+      className='py-4 rounded-md my-2 text-white w-full flex flex-col items-center justify-center'
+      activeClassName={location?.pathname.includes(to) ? 'bg-active-app' : ''}
     >
-      <div  className='px-2 py-2 flex items-center justify-center text-xl'>
+      <div  className='text-2xl my-1'>
         {icon}
       </div>
-      <span className='flex-1 text-lg tracking-wide font-semibold text-left flex items-center justify-start ff-monster'>
+      <span className='text-xs px-2'>
         {label}
       </span>
-      <div className={location?.pathname.includes(to) ? 'pl-1 mr-1 bg-white rounded-md' : ''}></div>
     </NavLink>
   );
 };
