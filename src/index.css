@@ -5,6 +5,7 @@
 :root {
     --bg-app : #262626;
     --bg-active-app : #404040;
+    --bg-active-text : #9b9b9b;
 }
 
 * {
@@ -18,6 +19,10 @@
 
 .bg-active-app {
     background-color: var(--bg-active-app);
+}
+
+.bg-active-text {
+    color: var(--bg-active-text);
 }
 
 .bd {
