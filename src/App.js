@@ -10,6 +10,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import TeamsPage from './Pages/TeamsPage/TeamsPage';
 import PlayersPage from './Pages/PlayersPage/PlayersPage';
+import TeamDetailsPage from './Pages/TeamDetailsPage/TeamDetailsPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                   <Switch>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/teams' component={TeamsPage}/>
+                    <Route path='/team/:id' component={TeamDetailsPage} />
                     <Route exact path='/players' component={PlayersPage}/>
                     <Route path='*' component={PageNotFound} />
                   </Switch>
