@@ -25,6 +25,11 @@ function TeamDetailsPage(){
                     </p>
                 </div>
             </div>
+            <Header text={`Players`}
+                    classList={'my-2 text-white bg-active-app px-4 py-2 rounded-md text-2xl ff-monster tracking-wider'} />
+            <div className="bd">
+                player
+            </div>
         </div>
     );
 }

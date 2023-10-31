@@ -72,3 +72,29 @@
   0%{transform:translate(0px, 50px); opacity: 0;}
   100%{transform:translate(0px, 0); opacity: 1;}
 }
+
+.slide-right {
+    animation: 300ms slide-right;
+}
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.slide-left {
+    animation: 300ms slide-left;
+}
+@keyframes slide-left {
+    from {
+        margin-left: 0%;
+        opacity: 1;
+    }
+    to {
+        margin-left: -100%;
+        opacity: 0;
+    }
+}
