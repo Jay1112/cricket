@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {BiMenuAltLeft} from 'react-icons/bi';
+import { ImCross } from 'react-icons/im';
+import SideBar from "../SideBar/SideBar";
 
 function NavBar(){
     const popupStyle = {
@@ -27,8 +29,15 @@ function NavBar(){
             <p className="text-center flex-1 md:text-left text-3xl text-white font-normal ff-poppins tracking-wide mx-2">Cricker</p>
             { 
                 isOpen &&
-                <div style={popupStyle} className={`${toggle ? 'slide-right' : 'slide-left'} h-screen top-0 left-0 text-white p-4 bg-rose-500 absolute`}>
-                    <button onClick={handleClose} className="bg-green-500 p-4">X</button>
+                <div style={popupStyle} className={`${toggle ? 'slide-right' : 'slide-left'} h-screen top-0 left-0 text-white p-4 bg-black absolute flex flex-col items-center justify-start z-10`}>
+                    <div className="w-full flex items-center justify-end">
+                        <button onClick={handleClose} className="p-4 bg-black rounded-md">
+                            <ImCross className="text-xl" />
+                        </button>
+                    </div>
+                    <div className="my-2 w-full">
+                        <SideBar />
+                    </div>
                 </div>
             }
         </div>
