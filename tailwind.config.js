@@ -14,6 +14,9 @@ module.exports = {
       },
       maxWidth: {
         '250': '250px',
+      },
+      scale : {
+        '102' : '1.02',
       }
     },
     screens: {

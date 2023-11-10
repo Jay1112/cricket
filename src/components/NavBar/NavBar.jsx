@@ -36,7 +36,7 @@ function NavBar(){
                         </button>
                     </div>
                     <div className="my-2 w-full">
-                        <SideBar />
+                        <SideBar handleClose={handleClose} />
                     </div>
                 </div>
             }

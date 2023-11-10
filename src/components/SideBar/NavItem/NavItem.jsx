@@ -6,6 +6,12 @@ function NavItem(props){
   const { label, icon, to, children } = props.item;
   const location = useLocation();
 
+  function handleClose(){
+    if(props.handleClose){
+      props?.handleClose();
+    }
+  }
+
   if (children) {
     return <NavItemHeader item={props.item} />;
   }
@@ -13,6 +19,7 @@ function NavItem(props){
   return (
     <NavLink
       exact
+      onClick={handleClose}
       to={location?.pathname.includes(to) ? location.pathname : to}
       className='py-4 rounded-md my-2 text-white w-full flex md:flex-col items-center justify-center'
       activeClassName={location?.pathname.includes(to) ? 'bg-active-app' : ''}

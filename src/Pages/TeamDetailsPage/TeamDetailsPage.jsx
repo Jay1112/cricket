@@ -2,6 +2,8 @@ import React from "react";
 import { useRouteMatch } from "react-router-dom";
 import Header from "../../components/UI/Header/Header";
 import { teamsList } from "../../database/teamsList";
+import { playersList } from "../../database/playersList";
+import PlayerItem from "../../components/PlayerItem/PlayerItem";
 
 function TeamDetailsPage(){
     const match = useRouteMatch();
@@ -27,8 +29,12 @@ function TeamDetailsPage(){
             </div>
             <Header text={`Players`}
                     classList={'my-2 text-white bg-active-app px-4 py-2 rounded-md text-2xl ff-monster tracking-wider'} />
-            <div className="bd">
-                player
+            <div className="my-1 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-2">
+                {
+                   playersList.map((item)=>{
+                    return <PlayerItem  itemData={item} key={item.id} />
+                   }) 
+                }
             </div>
         </div>
     );
